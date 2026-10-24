@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Try an independent browser-based WordForge vocabulary practice preview.">
+  <meta name="theme-color" content="#f4f1e8">
+  <title>WordForge | Vocabulary preview</title>
+  <link rel="stylesheet" href="assets/css/practice.css">
+  <script src="assets/js/practice.js" defer></script>
+</head>
+<body>
+  <main class="practice-shell">
+    <header class="practice-header">
+      <a class="practice-brand" href="index.html" aria-label="Back to WordForge website">
+        <span class="practice-brand-mark" aria-hidden="true">W</span>
+        <span>WordForge</span>
+      </a>
+      <a class="back-link" href="index.html">Back to website <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <section class="practice-intro" aria-labelledby="practice-title">
+      <p class="eyebrow">Browser preview <span></span> Independent demo</p>
+      <h1 id="practice-title">A few words,<br><em>one at a time.</em></h1>
+      <p class="intro-copy">Try a small vocabulary practice session. Your progress stays on this page and is not saved or sent anywhere.</p>
+    </section>
+
+    <section class="practice-area" aria-label="Vocabulary practice">
+      <div class="session-bar">
+        <span>WORD PRACTICE</span>
+        <span><strong data-known-count>0</strong> of <span data-total-count>0</span> marked known</span>
+      </div>
+      <div class="progress-track" role="progressbar" aria-label="Words marked known" aria-valuemin="0" aria-valuemax="8" aria-valuenow="0">
+        <span data-progress></span>
+      </div>
+
+      <article class="word-card" aria-live="polite">
+        <div class="word-card-top">
+          <span data-word-number>WORD 01</span>
+          <span class="part-of-speech" data-part-of-speech></span>
+        </div>
+        <h2 data-word></h2>
+        <p class="word-prompt" data-prompt>Do you know what this word means?</p>
+        <div class="word-answer" data-answer hidden>
+          <p data-definition></p>
+          <p class="example-line"><span>IN A SENTENCE</span><br><i data-example></i></p>
+        </div>
+        <div class="card-actions">
+          <button class="action-button action-primary" type="button" data-reveal>Show meaning</button>
+          <button class="action-button action-quiet" type="button" data-know>I know this word</button>
+          <button class="action-button action-quiet" type="button" data-next>Next word <span aria-hidden="true">→</span></button>
+        </div>
+      </article>
+
+      <div class="session-footer">
+        <p><span class="session-dot" aria-hidden="true"></span> Sample vocabulary for this browser preview. Not content from the Android prototype.</p>
+        <button class="restart-button" type="button" data-restart>Start over</button>
+      </div>
+    </section>
+
+    <footer class="practice-footer">
+      <span>WordForge · Browser preview</span>
+      <span>No account, downloads, or saved progress.</span>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Search and filter WordForge's sample directory of apps, tools, and digital projects.">
+  <meta name="theme-color" content="#ffffff"><title>Explore projects | WordForge</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script><script src="assets/js/apps.js" defer></script><script src="assets/js/directory.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a><header class="site-header" data-site-header></header>
+  <noscript><nav class="container" aria-label="Main navigation"><a href="index.html">Home</a> · <a href="explore.html">Explore</a> · <a href="submit.html">For developers</a></nav></noscript>
+  <main id="main">
+    <section class="page-hero"><div class="container"><span class="eyebrow">The directory</span><h1>Explore projects</h1><p class="lead">Search a small local collection of demonstration listings. Search and filters run in your browser; no server is involved.</p></div></section>
+    <section class="section" style="padding-top: 0"><div class="container">
+      <p class="demo-note">Every listing on this first version is fictional sample content. There are no real download links, live submissions, or verified projects.</p>
+      <div class="directory-controls" role="search">
+        <div><label for="directory-search">Search name or description</label><input class="input" id="directory-search" type="search" maxlength="120" placeholder="Try “notes” or “creative”"></div>
+        <div><label for="category-filter">Category</label><select class="select" id="category-filter"><option value="">All categories</option><option>Audio</option><option>Design</option><option>Developer tools</option><option>Learning</option><option>Productivity</option><option>Reading</option><option>Utilities</option></select></div>
+        <div><label for="sort-order">Sort projects</label><select class="select" id="sort-order"><option value="featured">Featured order</option><option value="az">Name: A to Z</option></select></div>
+      </div>
+      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:.8rem"><p class="result-count" data-result-count aria-live="polite"></p><button class="button button-secondary" type="button" data-reset-filters>Clear filters</button></div>
+      <div class="card-grid" data-app-list aria-live="polite"></div>
+      <div class="empty-state" data-empty-state hidden><h2>No matching projects</h2><p>Try another search or clear the filters to see all sample listings.</p></div>
+    </div></section>
+  </main><footer class="site-footer" data-site-footer></footer>
+</body>
+</html>
